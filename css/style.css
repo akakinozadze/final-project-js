@@ -1,0 +1,229 @@
+.header {
+  /* max-width: 1354px; */
+  min-height: 40px;
+  width: 100%;
+  /* background-color: burlywood; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  border-radius: 6px;
+}
+.menu {
+  max-width: 40px;
+  height: 16px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: cornflowerblue;
+  display: none;
+}
+.navBar {
+  display: none;
+}
+/*! მთვარი გვერდის გარმონი   */
+.box-garmon {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  width: 100%;
+}
+.h2::after {
+  content: "\25bc";
+}
+.garmon {
+  cursor: pointer;
+  text-align: center;
+}
+
+.ul2 {
+  max-width: 61.23px;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to bottom, #ccccff 0%, #ff9966 100%);
+  position: absolute;
+  overflow: hidden;
+}
+
+.garmon.garmon1 .ul2 {
+  height: 106px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.garmon.garmon1 .ul4 {
+  height: 80px;
+}
+.garmon.garmon1 .h2::after {
+  content: "\25b2";
+}
+.li2 {
+  transition: all, 0.3s;
+}
+.li2:hover {
+  border-bottom: 1px solid black;
+}
+/*! ბურგერის შიდა გარმონი */
+.ulBox {
+  width: 100%;
+  height: 100%;
+}
+.ulBox1 {
+  padding-top: 20px;
+  width: 100%;
+  background-color: #ccccff;
+  height: 100%;
+  display: none;
+  /* position: relative; */
+}
+.ulBox.newUlBox .ul3 {
+  display: block;
+  padding-top: 80px;
+}
+.ulBox.newUlBox .ulBox1 {
+  display: block;
+}
+.ulBox.newUlBox .h3-h3 {
+  display: none;
+}
+.ul3 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ccccff 0%, #ff9966 100%);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.icon_back {
+  width: 10px;
+  height: 15px;
+  background-color: #ff9966;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.h3-ul-insaid {
+  padding-bottom: 20px;
+  font-weight: 900;
+  font-size: 24px;
+
+}
+.main-ulBox-flex {
+  display: flex;
+  flex-direction: column;
+}
+/*! ბურგერი  */
+.h3-h3 {
+  padding-top: 80px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 24px;
+}
+.logo2 {
+  position: absolute;
+  right: 240px;
+}
+.navBar2 {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(127, 88, 88);
+  display: flex;
+  left: 0;
+  top: 0;
+  transition: all;
+  transition-duration: 1s;
+}
+.ul {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.li {
+  color: rgb(26, 31, 31);
+}
+.menu1 {
+  width: 40px;
+  height: 16px;
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+}
+.close {
+  max-width: 20px;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.close2 {
+  object-fit: cover;
+  width: 100%;
+}
+/*! ლოგო  */
+.logo1 {
+  max-width: 66px;
+  height: 38px;
+  width: 100%;
+  background-color: rgb(238, 177, 189);
+  border-radius: 30% 16% 66% 45% / 58% 34% 39% 29%;
+  box-shadow: 9px 5px 7px rgb(121, 197, 177);
+}
+.logo-image {
+  object-fit: cover;
+  max-width: 66px;
+  height: 38px;
+}
+/*! სერჩი */
+.search1 {
+  max-width: 209px;
+  height: 20px;
+  width: 100%;
+  /* background-color: chartreuse; */
+  display: flex;
+  justify-content: space-between;
+}
+.search2 {
+  cursor: pointer;
+  background-color: aqua;
+}
+.search3 {
+  object-fit: cover;
+  width: 100%;
+  width: 20px;
+  height: 20px;
+}
+.inputSearch {
+  margin-top: 30px;
+  display: none;
+}
+.newSearch2.inputSearch {
+  display: block;
+  max-width: 222px;
+  width: 100%;
+  position: absolute;
+  margin-top: -1px;
+  right: 211px;
+}
+.login {
+  cursor: pointer;
+}
+.sinup {
+  cursor: pointer;
+}
+.secshon {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  background-color: cadetblue;
+}

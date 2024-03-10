@@ -1,0 +1,23 @@
+@media (max-width: 1024px) {
+  .header {
+    /* background-color: cornflowerblue; */
+  }
+  .newSearch2.inputSearch {
+    max-width: 100px;
+    width: 100%;
+  }
+}
+@media (min-width: 350px) and (max-width: 750px) {
+  .menu {
+    display: block;
+  }
+  .box-garmon {
+    display: none;
+  }
+  .newSearch2.inputSearch {
+    margin-top: 30px;
+    right: 0;
+    max-width: 212px;
+  }
+  
+}
