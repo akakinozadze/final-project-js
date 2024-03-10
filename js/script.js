@@ -27,36 +27,52 @@ li1.forEach(function (item) {
   });
 });
 
-const ulBox = document.querySelectorAll(".ulBox");
+// ul box man
 
-ulBox.forEach(function (element) {
-  element.addEventListener("click", function () {
-    element.classList.add("newUlBox");
-  });
-  console.log(element);
+const ulBoxMan = document.getElementById("ulBoxMan");
+ulBoxMan.addEventListener("click", function () {
+  ulBoxMan.classList.add("newUlBox");
 });
-// console.log(ulBox);
-// const ulBox = document.querySelector(".ulBox");
-
-// ulBox.addEventListener("click", function () {
-//   ulBox.classList.add("newUlBox");
-// });
-
-// const ulBox = document.querySelectorAll(".ulBox");
-
-// ulBox.addEventListener("click", function () {
-//   ulBox.classList.add("newUlBox");
-// });
-// ulBox.forEach(function (item) {
-//   item.addEventListener("click", function () {
-//     this.classList.toggle("garmon2");
-//   });
-// });
 const iconBack = document.getElementById("icon_back");
+iconBack.addEventListener("click", function (e) {
+  e.stopPropagation();
+  ulBoxMan.classList.remove("newUlBox");
+});
+// ul box woman
+const ulBoxWoman = document.getElementById("ulBoxWoman");
+ulBoxWoman.addEventListener("click", function () {
+  ulBoxWoman.classList.add("newUlBoxWoman");
+});
+const iconBack2 = document.getElementById("icon_back2");
+iconBack2.addEventListener("click", function (e) {
+  e.stopPropagation();
+  ulBoxWoman.classList.remove("newUlBoxWoman");
+});
+// ul box kids
+const ulBoxKids = document.getElementById("ulBoxKids");
+ulBoxKids.addEventListener("click", function () {
+  ulBoxKids.classList.add("newUlBoxkids");
+});
+const iconBack3 = document.getElementById("icon_back3");
+iconBack3.addEventListener("click", function (e) {
+  e.stopPropagation();
+  ulBoxKids.classList.remove("newUlBoxkids");
+});
+//  ul box Accessories
+const ulBoxAcce = document.getElementById("ulBoxAcce");
+ulBoxAcce.addEventListener("click", function () {
+  ulBoxAcce.classList.add("newUlBoxAcce");
+});
+const iconBack4 = document.getElementById("icon_back4");
+iconBack4.addEventListener("click", function (e) {
+  e.stopPropagation();
+  ulBoxAcce.classList.remove("newUlBoxAcce");
+});
+//login1
 
+const login1 = document.getElementById("login");
+login1.addEventListener("click",function(e){
+  e.preventDefault();
 
-
-// iconBack.addEventListener("click", function (e) {
-//   e.stopPropagation();
-//   ulBox.classList.remove("newUlBox");
-// });
+  login1.classList.toggle("Newlogin1")
+})
