@@ -70,9 +70,30 @@ iconBack4.addEventListener("click", function (e) {
 });
 //login1
 
-const login1 = document.getElementById("login");
-login1.addEventListener("click",function(e){
-  e.preventDefault();
+const login1 = document.getElementById("loginRegistr");
+const loginBox = document.getElementById("loginBox");
+login1.addEventListener("click", function (e) {
+  loginBox.classList.toggle("newlogin");
+});
+//login closer
 
-  login1.classList.toggle("Newlogin1")
-})
+const closeLogin = document.getElementById("closeLogin");
+closeLogin.addEventListener("click", function () {
+  loginBox.classList.remove("newlogin");
+});
+// submitHeader
+const submitHeader = document.getElementById("submitHeader");
+submitHeader.addEventListener("click", function (e) {
+  e.preventDefault();
+});
+// sin up
+const SingUp = document.getElementById("SingUp");
+const formRegistrBox = document.getElementById("formRegistrBox");
+SingUp.addEventListener("click", function (e) {
+  formRegistrBox.classList.add("newformRegistrBox");
+});
+// closeLogin1
+const closeLogin1 = document.getElementById("closeLogin1");
+closeLogin1.addEventListener("click", function () {
+  formRegistrBox.classList.remove("newformRegistrBox");
+});
