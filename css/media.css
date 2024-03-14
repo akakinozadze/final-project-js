@@ -6,6 +6,23 @@
     max-width: 100px;
     width: 100%;
   }
+  .SizeGRAND-COURT-SHOES {
+    margin-top: 25px;
+    max-width: 710px;
+    width: 100%;
+    height: 720px;
+    /* height: 100%; */
+  }
+  .GRAND_COURT_SHOES {
+    max-width: 350px;
+    height: 350px;
+  }
+  .mainSizeBox {
+    max-width: 250px;
+    height: 420px;
+    margin-top: 25px;
+    justify-content: center;
+  }
 }
 @media (min-width: 350px) and (max-width: 750px) {
   .menu {
@@ -18,6 +35,24 @@
     margin-top: 30px;
     right: 0;
     max-width: 212px;
+  }
+  .SizeGRAND-COURT-SHOES {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 360px;
+    height: 875px;
+    margin-top: 25px;
+  }
+  .GRAND_COURT_SHOES {
+    max-width: 250px;
+    height: 210px;
+  }
+  .mainSizeBox {
+    max-width: 150px;
+    margin-top: 50px;
+    height: 250px;
+    /* background-color: cadetblue; */
   }
   
 }

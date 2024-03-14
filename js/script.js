@@ -94,6 +94,35 @@ SingUp.addEventListener("click", function (e) {
 });
 // closeLogin1
 const closeLogin1 = document.getElementById("closeLogin1");
-closeLogin1.addEventListener("click", function () {
+closeLogin1.addEventListener("click", function (e) {
   formRegistrBox.classList.remove("newformRegistrBox");
 });
+
+// import { formFmc } from "./form.js";
+
+// formFmc();
+
+// import { slider } from "./slider";
+// slider();
+var splide = new Splide(".splide", {
+  type: "loop",
+  perPage: 2,
+  focus: "center",
+});
+splide.mount();
+// სლაიდერიდ დივიდან კალათაში გადასასვლელი ღილაკი
+let testi1 = document.getElementById("testi1");
+let box5 = document.getElementById("box5");
+testi1.addEventListener("click", function () {
+  box5.classList.toggle("box5");
+});
+
+const clickBack = document.getElementById("clickBack");
+clickBack.addEventListener("click", function () {
+  box5.classList.remove("box5");
+});
+// const kaki3 = document.getElementById("kaki2");
+// const box5 = document.getElementById("box5");
+// kaki3.addEventListener("click", function () {
+//   box5.classList.add("kaki2");
+// });

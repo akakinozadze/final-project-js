@@ -1,11 +1,13 @@
 .header {
-  min-height: 40px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
   border-radius: 6px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
 }
 .menu {
   max-width: 40px;
@@ -24,6 +26,12 @@
   justify-content: space-between;
   max-width: 250px;
   width: 100%;
+}
+h2 {
+  font-family: "Mulish";
+}
+h3 {
+  font-family: "Mulish";
 }
 .h2::after {
   content: "\25bc";
@@ -71,7 +79,6 @@
 .ulBox1 {
   padding-top: 20px;
   width: 100%;
-  background-color: #ccccff;
   height: 100%;
   display: none;
 }
@@ -127,6 +134,7 @@
   padding-bottom: 20px;
   font-weight: 900;
   font-size: 24px;
+  font-family: "Mulish";
 }
 .main-ulBox-flex {
   display: flex;
@@ -139,6 +147,7 @@
   cursor: pointer;
   font-weight: 900;
   font-size: 24px;
+  font-family: "Mulish";
 }
 .logo2 {
   position: absolute;
@@ -149,7 +158,8 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: rgb(127, 88, 88);
+  position: fixed;
+  background-color: rgb(255, 253, 253);
   display: flex;
   left: 0;
   top: 0;
@@ -164,6 +174,7 @@
 }
 .li {
   color: rgb(26, 31, 31);
+  font-family: "Mulish";
 }
 .menu1 {
   width: 40px;
@@ -193,7 +204,7 @@
   max-width: 66px;
   height: 38px;
   width: 100%;
-  background-color: rgb(238, 177, 189);
+  background-color: rgb(255, 253, 253);
   border-radius: 30% 16% 66% 45% / 58% 34% 39% 29%;
 }
 .logo-image {
@@ -206,12 +217,12 @@
   max-width: 209px;
   height: 20px;
   width: 100%;
-  /* background-color: chartreuse; */
   display: flex;
   justify-content: space-between;
 }
 .search2 {
   cursor: pointer;
+  font-family: "Mulish";
 }
 .search3 {
   object-fit: cover;
@@ -238,11 +249,12 @@
   cursor: pointer;
 }
 .secshon {
-  margin-top: 10px;
   width: 100%;
   height: 200px;
   background-color: cadetblue;
+  margin-top: 40px;
 }
+
 /*! login */
 .buttonlogin {
   display: none;
@@ -250,8 +262,8 @@
 .newlogin.buttonlogin {
   display: block;
   width: 100%;
-  height: 100px;
-  background-color: #dbd5d3;
+  height: 150px;
+  background-color: rgb(255, 253, 253);
   display: flex;
   text-align: center;
   align-items: center;
@@ -263,10 +275,17 @@
 .buttonBox {
   cursor: pointer;
   font-weight: 700;
+  font-family: "Mulish";
+}
+.submitCursor {
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "Mulish";
 }
 .Sing-Up {
   font-weight: 700;
   cursor: pointer;
+  font-family: "Mulish";
 }
 .closeLogin {
   width: 20px;
@@ -280,21 +299,169 @@
 /*! registred forms  */
 .formRegistrBox {
   display: none;
+  z-index: 10000123123;
 }
-.newformRegistrBox.formRegistrBox{
+.newformRegistrBox.formRegistrBox {
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #ccccff;
+  background: linear-gradient(to top right, #ccffff 10%, #ffffff 92%);
   display: block;
   height: 300px;
   display: flex;
   flex-direction: column;
-align-items: center;  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000123120123123;
 }
-.singUpValue {
+
+.lableBox {
+  display: flex;
+  flex-direction: column;
   max-width: 300px;
   width: 100%;
+  z-index: 10000123123;
+}
+.boxRadio {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  z-index: 10000123123;
+}
+.submitBox {
+  max-width: 300px;
+  width: 100%;
+  text-align: end;
+  z-index: 10000123123;
+}
+.submitRegistre {
+  cursor: pointer;
+  font-family: "Mulish";
+  z-index: 10000123123;
+}
+.inputRadio {
+  font-weight: 900;
+  cursor: pointer;
+  font-family: "Mulish";
+  z-index: 10000123123;
+}
+.singUpValue {
+  font-family: "Mulish";
+  font-weight: 500;
+  font-size: 1rem;
+  z-index: 10000123123;
+}
+/*! სლაიდერი  */
+.splide__track {
+  height: 200px;
+  width: 100%;
+  margin-top: 140px;
+}
+.kaki2.kaki7 {
+  column-gap: 10px;
+}
+.splide__list .firsSlider {
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.firsSlider.kaki6 {
+  max-width: 200px;
+  width: 100%;
+}
+.firsSlider.kaki6:hover {
+  background-color: rgb(112, 112, 152);
+  border: 2px solid black;
+}
+.h2bostasi {
+  position: absolute;
+  bottom: 15px;
+}
+.pbotasi {
+  position: absolute;
+  bottom: 0;
+}
+.box4 {
+  display: none;
+}
 
+.box4.box5 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #dfd6d1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.clickBack {
+  max-width: 10px;
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  cursor: pointer;
+  z-index: 123;
+}
+/* ბოტასების შიდა განყოფილება */
+.Main-GRAND-COURT-SHOES1 {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.SizeGRAND-COURT-SHOES {
+  max-width: 910px;
+  /* min-height: 530px; */
+  width: 100%;
+  /* background-color: #ff9966; */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10px, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 25px;
+}
+.GRAND_COURT_SHOES:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.GRAND_COURT_SHOES {
+  max-width: 450px;
+  height: 450px;
+  width: 100%;
+  /* height: 100%; */
+}
+.GRAND_COURT_SHOES1 {
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainSizeBox {
+  max-width: 500px;
+  height: 200px;
+  width: 100%;
+  /* height: 100%; */
+  /* right: 50px; */
+  /* background-color: #3f3f6b; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 5px;
+  margin: auto;
+}
+.sizeBox {
+  max-width: 100px;
+  width: 100%;
+  height: 20px;
+  /* background-color: #ff9966; */
 }

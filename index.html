@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    "
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bady">
     <header>
       <div class="header">
         <div class="box-garmon">
@@ -195,18 +202,23 @@
         </div>
         <form action="" class="buttonlogin" id="loginBox">
           <input
-            type="text"
+            type="email"
             name="userNameHeader"
-            id="userNameHeader"
+            id="emailHeader"
             placeholder="Enter your email"
           />
+          <p class="errorPharagrap">required field</p>
           <input
             type="password"
             name="passwordHeader"
             id="passwordHeader"
             placeholder="Enter password"
           />
-          <input type="submit" value="submit" id="submitHeader" />
+          <p class="errorPharagrap">required field</p>
+
+          <button class="submitCursor" value="submit" id="submitHeader">
+            submit
+          </button>
           <div id="closeLogin" class="closeLogin">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -216,48 +228,88 @@
             </svg>
           </div>
         </form>
-        <form action="" class="formRegistrBox" id="formRegistrBox">
-          <label class="singUpValue" for="">First name</label>
-          <input
-            class="singUpValue"
-            type="text"
-            name="FirstName"
-            id="FirstName"
-            placeholder="First Name"
-          />
-          <label class="singUpValue" for="">Last name</label>
-          <input
-            class="singUpValue"
-            type="text"
-            name="LastName"
-            id="LastName"
-            placeholder="Last Name"
-          />
-          <label class="singUpValue" for="">Your email</label>
-          <input
-            class="singUpValue"
-            type="email"
-            name="Youremail"
-            id="Youremail"
-            placeholder="Email address"
-          />
-          <label class="singUpValue" for="">password</label>
-          <input
-            class="singUpValue"
-            type="password"
-            name="passwordRegistr"
-            id="passwordRegistr"
-            placeholder="password"
-          />
-          <label class="singUpValue" for="">Repeat password</label>
-          <input
-            class="singUpValue"
-            type="password"
-            name="RepeatPassword"
-            id="RepeatPassword"
-            placeholder="Repeat password"
-            
-          />
+        <!-- ფორმის ვალიდაცია -->
+        <form action="" class="formRegistrBox" id="formRegistrBox" method="GET">
+          <div class="lableBox box1">
+            <label class="singUpValue" for="">First name</label>
+            <input
+              class="singUpValue"
+              type="text"
+              name="FirstName"
+              id="FirstName"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="lableBox box1">
+            <label class="singUpValue" for="">Last name</label>
+            <input
+              class="singUpValue"
+              type="text"
+              name="LastName"
+              id="LastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="lableBox box1">
+            <label class="singUpValue" for="">Your email</label>
+            <input
+              class="singUpValue"
+              type="email"
+              name="Youremail"
+              id="Youremail"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="lableBox box2">
+            <label class="singUpValue" for="">password</label>
+            <input
+              class="singUpValue"
+              type="password"
+              name="passwordRegistr"
+              id="passwordRegistr"
+              placeholder="password"
+              minlength="6"
+              pattern="/.*[0-9].*/"
+            />
+          </div>
+          <div class="lableBox box3">
+            <label class="singUpValue" for="">Repeat password</label>
+            <input
+              class="singUpValue"
+              type="password"
+              name="RepeatPassword"
+              id="RepeatPassword"
+              placeholder="Repeat password"
+              minlength="6"
+              pattern="/.*[0-9].*/"
+            />
+          </div>
+          <div class="lableBox box2">
+            <label for="">Enter your birth day</label>
+            <input type="date" id="date-between" name="date" />
+          </div>
+          <div class="boxRadio">
+            <input
+              class="inputRadio"
+              type="radio"
+              name="genderWoman"
+              id="radio1"
+            />
+            <label for="">woman</label>
+            <input
+              class="inputRadio"
+              type="radio"
+              name="genderWoman"
+              id="radio2"
+            />
+            <label for="">man</label>
+          </div>
+
+          <div class="submitBox">
+            <button class="submitRegistre" id="submitRegistre">submit</button>
+          </div>
           <div id="closeLogin1" class="closeLogin">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -269,7 +321,102 @@
         </form>
       </div>
     </header>
-    <section class="secshon"></section>
-    <script src="js/script.js"></script>
+    <main class="main">
+      <section class="splide akakikaki" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <!-- განვსაზღვრავ li ტეგების პარამეტრებს ერთმანეთთან მიმართებაში -->
+          <ul class="splide__list kaki2 kaki7">
+            <!-- ვმოქმედებ უშუალოდ li ტეგებზე , ზომა და აშშ.. -->
+            <li class="splide__slide firsSlider kaki6">
+              <img
+                id="testi1"
+                src="./shoes/GRAND.COURT.SHOES/Grand_Court_Shoes_White_GW9214_01_standard.avif"
+                alt="shoes"
+              />
+              <h2 class="h2bostasi">GRAND COURT SHOES</h2>
+              <p class="pbotasi">$70</p>
+            </li>
+            <li class="splide__slide firsSlider kaki6">Slide 02</li>
+            <li class="splide__slide firsSlider kaki6">Slide 03</li>
+            <li class="splide__slide firsSlider kaki6">Slide 04</li>
+            <li class="splide__slide firsSlider kaki6">Slide 05</li>
+            <li class="splide__slide firsSlider kaki6">Slide 06</li>
+          </ul>
+        </div>
+      </section>
+      <!-- <section class="secshon"></section> -->
+      <div class="box4" id="box5">
+        <div class="Main-GRAND-COURT-SHOES1">
+          <div class="SizeGRAND-COURT-SHOES">
+            <div class="GRAND_COURT_SHOES">
+              <img
+                class="GRAND_COURT_SHOES1"
+                src="./shoes/GRAND.COURT.SHOES/Grand_Court_Shoes_White_GW9214_02_standard_hover.avif"
+                alt=""
+              />
+            </div>
+            <div class="GRAND_COURT_SHOES">
+              <img
+                class="GRAND_COURT_SHOES1"
+                src="./shoes/GRAND.COURT.SHOES/Grand_Court_Shoes_White_GW9214_04_standard.avif"
+                alt=""
+              />
+            </div>
+            <div class="GRAND_COURT_SHOES">
+              <img
+                class="GRAND_COURT_SHOES1"
+                src="./shoes/GRAND.COURT.SHOES/Grand_Court_Shoes_White_GW9214_05_standard.avif"
+                alt=""
+              />
+            </div>
+            <div class="GRAND_COURT_SHOES">
+              <img
+                class="GRAND_COURT_SHOES1"
+                src="./shoes/GRAND.COURT.SHOES/Grand_Court_Shoes_White_GW9214_06_standard.avif"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="mainSizeBox">
+            <h6>size</h6>
+            <div class="sizeBox">
+              <label for="">M 5.5</label>
+              <input type="radio" name="radioSize" />
+            </div>
+            <div class="sizeBox">
+              <label for="">M 5.5</label>
+              <input type="radio" name="radioSize" />
+            </div>
+            <div class="sizeBox">
+              <label for="">M 5.5</label>
+              <input type="radio" name="radioSize" />
+            </div>
+            <div class="sizeBox">
+              <label for="">M 5.5</label>
+              <input type="radio" name="radioSize" />
+            </div>
+            <div class="sizeBox">
+              <label for="">M 5.5</label>
+              <input type="radio" name="radioSize" />
+            </div>
+            <button class="buttonAdd">add to basket</button>
+          </div>
+          <!-- <img class="GRAND.COURT.SHOES" src="" alt=""> -->
+        </div>
+        <div class="clickBack" id="clickBack">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js" type="module"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
   </body>
 </html>
