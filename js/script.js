@@ -108,6 +108,9 @@ var splide = new Splide(".splide", {
   type: "loop",
   perPage: 2,
   focus: "center",
+  pagination: false,
+  // autoplay: true,
+  // inerval: 2000,
 });
 splide.mount();
 // სლაიდერიდ დივიდან კალათაში გადასასვლელი ღილაკი

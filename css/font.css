@@ -10,3 +10,17 @@
   font-style: normal;
   font-display: swap;
 }
+/* Outfit*/
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/Outfit/Outfit-SemiBold.eot');
+  src: url('Outfit-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Outfit/Outfit-SemiBold.woff2') format('woff2'),
+      url('../fonts/Outfit/Outfit-SemiBold.woff') format('woff'),
+      url('../fonts/Outfit/Outfit-SemiBold.ttf') format('truetype'),
+      url('Outfit-SemiBold.svg#Outfit-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+

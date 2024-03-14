@@ -424,9 +424,10 @@ h3 {
   width: 100%;
   /* background-color: #ff9966; */
   display: grid;
-  grid-template-columns: repeat(2, minmax(10px, 1fr));
-  column-gap: 10px;
-  row-gap: 10px;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  /* column-gap: 10px;
+  row-gap: 10px; */
+  grid-gap: 20px;
   margin-top: 25px;
 }
 .GRAND_COURT_SHOES:hover {
@@ -446,7 +447,7 @@ h3 {
   object-fit: cover;
 }
 .mainSizeBox {
-  max-width: 500px;
+  max-width: 300px;
   height: 200px;
   width: 100%;
   /* height: 100%; */
@@ -455,7 +456,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   row-gap: 5px;
   margin: auto;
 }
@@ -464,4 +464,35 @@ h3 {
   width: 100%;
   height: 20px;
   /* background-color: #ff9966; */
+}
+
+.sizeRadio {
+  margin-left: 18px;
+}
+.fontSize {
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 1rem;
+}
+.ShoseName {
+  font-family: "Outfit";
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.pharagrapPrise {
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+.priseBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #4a3b34;
+  max-width: 200px;
+  min-height: 70px;
+
 }

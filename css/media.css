@@ -19,10 +19,12 @@
   }
   .mainSizeBox {
     max-width: 250px;
-    height: 420px;
+    height: 320px;
     margin-top: 25px;
     justify-content: center;
+    margin-top: 240px;
   }
+  
 }
 @media (min-width: 350px) and (max-width: 750px) {
   .menu {
@@ -51,7 +53,8 @@
   .mainSizeBox {
     max-width: 150px;
     margin-top: 50px;
-    height: 250px;
+    height: 150px;
+    margin: auto;
     /* background-color: cadetblue; */
   }
   
