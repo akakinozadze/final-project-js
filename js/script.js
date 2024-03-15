@@ -98,32 +98,83 @@ closeLogin1.addEventListener("click", function (e) {
   formRegistrBox.classList.remove("newformRegistrBox");
 });
 
-// import { formFmc } from "./form.js";
-
-// formFmc();
-
-// import { slider } from "./slider";
-// slider();
+//!
+let testi1 = document.getElementById("testi1");
+let box5 = document.getElementById("box5");
+testi1.addEventListener("click", function () {
+  box5.classList.toggle("box5");
+});
+//2
+let testi2 = document.getElementById("testi2");
+let box6 = document.getElementById("box6");
+testi2.addEventListener("click", function () {
+  box6.classList.toggle("box6");
+});
+let testi3 = document.getElementById("testi3");
+let box7 = document.getElementById("box7");
+testi3.addEventListener("click", function () {
+  box7.classList.toggle("box7");
+});
+let testi4 = document.getElementById("testi4");
+let box8 = document.getElementById("box8");
+testi4.addEventListener("click", function () {
+  box8.classList.toggle("box8");
+});
+let testi5 = document.getElementById("testi5");
+let box9 = document.getElementById("box9");
+testi5.addEventListener("click", function () {
+  box9.classList.toggle("box9");
+});
+let testi6 = document.getElementById("testi6");
+let box10 = document.getElementById("box10");
+testi6.addEventListener("click", function () {
+  box10.classList.toggle("box10");
+});
 var splide = new Splide(".splide", {
   type: "loop",
-  perPage: 2,
+  perPage: 4,
   focus: "center",
   pagination: false,
   // autoplay: true,
   // inerval: 2000,
 });
 splide.mount();
-// სლაიდერიდ დივიდან კალათაში გადასასვლელი ღილაკი
-let testi1 = document.getElementById("testi1");
-let box5 = document.getElementById("box5");
-testi1.addEventListener("click", function () {
-  box5.classList.toggle("box5");
-});
 
+//! სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 1
+
+3;
+
+//!  ქლიქი ფეიჯის გათიშვა
 const clickBack = document.getElementById("clickBack");
 clickBack.addEventListener("click", function () {
   box5.classList.remove("box5");
 });
+const clickBack1 = document.getElementById("clickBack1");
+clickBack1.addEventListener("click", function () {
+  box6.classList.remove("box6");
+});
+const clickBack2 = document.getElementById("clickBack2");
+clickBack2.addEventListener("click", function () {
+  box7.classList.remove("box7");
+});
+const clickBack3 = document.getElementById("clickBack3");
+clickBack3.addEventListener("click", function () {
+  box8.classList.remove("box8");
+});
+const clickBack4 = document.getElementById("clickBack4");
+clickBack4.addEventListener("click", function () {
+  box9.classList.remove("box9");
+});
+const clickBack5 = document.getElementById("clickBack5");
+clickBack5.addEventListener("click", function () {
+  box10.classList.remove("box10");
+});
+// სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 3
+
+// სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 3
+
+// ! მეოთხე ყუთის ფუნქცია
+
 // const kaki3 = document.getElementById("kaki2");
 // const box5 = document.getElementById("box5");
 // kaki3.addEventListener("click", function () {
