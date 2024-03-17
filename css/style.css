@@ -295,7 +295,41 @@ h3 {
   right: 0;
   cursor: pointer;
 }
+.bascet {
+  max-width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.bascet21 {
+  display: none;
+  transition: all;
+  transition-duration: 0.5s;
+}
 
+.bascet21.newBascet2 {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  background-color: #ccccff;
+  transition: all 1.5s linear;
+  display: block;
+}
+.bascetCloser {
+  max-width: 120px;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 110px;
+  right: 100px;
+  z-index: 12313123;
+  background-color: crimson;
+}
+.bascetCloser1 {
+  max-width: 120px;
+  height: 20px;
+  object-fit: cover;
+  position: absolute;
+}
 /*! registred forms  */
 .formRegistrBox {
   display: none;
@@ -369,11 +403,15 @@ h3 {
   width: 100%;
 }
 .firsSlider.kaki6 {
-  max-width: 200px;
+  max-width: 350px;
   width: 100%;
 }
+.firsSlider.kaki6 .splideBox {
+  width: 100%;
+  object-fit: cover;
+}
 .firsSlider.kaki6:hover {
-  background-color: rgb(112, 112, 152);
+  /* background-color: rgb(112, 112, 152); */
   border: 2px solid black;
 }
 .h2bostasi {
@@ -387,7 +425,6 @@ h3 {
 .box4 {
   display: none;
 }
-
 .box4.box5 {
   display: block;
   width: 100%;
@@ -432,6 +469,7 @@ h3 {
   max-width: 450px;
   height: 450px;
   width: 100%;
+  transition: all 0.3s;
 }
 .GRAND_COURT_SHOES1 {
   max-width: 450px;
@@ -443,9 +481,6 @@ h3 {
   max-width: 300px;
   height: 200px;
   width: 100%;
-  /* height: 100%; */
-  /* right: 50px; */
-  /* background-color: #3f3f6b; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -456,9 +491,7 @@ h3 {
   max-width: 100px;
   width: 100%;
   height: 20px;
-  /* background-color: #ff9966; */
 }
-
 .sizeRadio {
   margin-left: 18px;
 }
@@ -487,13 +520,11 @@ h3 {
   color: #4a3b34;
   max-width: 200px;
   min-height: 70px;
-
 }
 /* მეორე ბოტასი */
 .box4-6 {
   display: none;
 }
-
 .box4-6.box6 {
   display: block;
   width: 100%;
@@ -504,12 +535,10 @@ h3 {
   left: 0;
   z-index: 100;
 }
-
 /* მესამე ბოტასი */
 .box4-7 {
   display: none;
 }
-
 .box4-7.box7 {
   display: block;
   width: 100%;
@@ -524,7 +553,6 @@ h3 {
 .box4-8 {
   display: none;
 }
-
 .box4-8.box8 {
   display: block;
   width: 100%;
@@ -539,7 +567,6 @@ h3 {
 .box4-9 {
   display: none;
 }
-
 .box4-9.box9 {
   display: block;
   width: 100%;
@@ -554,7 +581,6 @@ h3 {
 .box4-10 {
   display: none;
 }
-
 .box4-10.box10 {
   display: block;
   width: 100%;
@@ -564,4 +590,74 @@ h3 {
   top: 0;
   left: 0;
   z-index: 100;
+}
+/*  */
+.GRAND_COURT_SHOES:hover {
+  transform: scale(1.1);
+}
+/* test */
+.asyncFnc {
+  margin-top: 200px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 1350px; */
+  /* justify-content: center;
+  align-items: center; */
+  column-gap: 20px;
+  width: 100%;
+}
+
+.teamMembersMainBox {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  /* height: 40px; */
+  /* text-align: center; */
+  background-color: #12129c;
+  height: 240px;
+  /* overflow: ; */
+  width: 100%;
+  /* background-color: #ff9966; */
+}
+
+.teamMenbersNames {
+  display: flex;
+  background-color: #326b27;
+  width: 100%;
+  column-gap: 20px;
+  text-align: center;
+}
+
+.MainBox {
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #4a3b34;
+  text-align: center;
+  transition: all 0.5s;
+}
+.MainBox.MainBox2 {
+  height: 240px;
+  transition: all 0.5s;
+}
+.MembersNameUl {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+}
+.TeamMembersImage {
+  max-width: 230px;
+  height: 110px;
+  object-fit: cover;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: aqua;
+}
+.MembersName {
+  color: black;
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 1.4rem;
 }

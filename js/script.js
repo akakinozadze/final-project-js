@@ -98,7 +98,7 @@ closeLogin1.addEventListener("click", function (e) {
   formRegistrBox.classList.remove("newformRegistrBox");
 });
 
-//!
+//!  სლაიდერის ღილაკები
 let testi1 = document.getElementById("testi1");
 let box5 = document.getElementById("box5");
 testi1.addEventListener("click", function () {
@@ -132,17 +132,17 @@ testi6.addEventListener("click", function () {
 });
 var splide = new Splide(".splide", {
   type: "loop",
-  perPage: 4,
+  perPage: 3,
   focus: "center",
   pagination: false,
-  // autoplay: true,
-  // inerval: 2000,
+  autoplay: true,
+  inerval: 2000,
 });
 splide.mount();
 
-//! სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 1
-
-3;
+// !  დავუბრუნდები
+// import { sliderFnc } from "./slider";
+// sliderFnc();
 
 //!  ქლიქი ფეიჯის გათიშვა
 const clickBack = document.getElementById("clickBack");
@@ -169,14 +169,65 @@ const clickBack5 = document.getElementById("clickBack5");
 clickBack5.addEventListener("click", function () {
   box10.classList.remove("box10");
 });
-// სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 3
 
-// სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 3
+// import { bascet1 } from "./slider";
 
-// ! მეოთხე ყუთის ფუნქცია
-
-// const kaki3 = document.getElementById("kaki2");
-// const box5 = document.getElementById("box5");
-// kaki3.addEventListener("click", function () {
-//   box5.classList.add("kaki2");
+// bascet1();
+// const bascet1 = document.getElementById("bascet1");
+// const bascet21 = document.getElementById("bascet21");
+// bascet1.addEventListener("click", function () {
+//   bascet21.classList.add("newBascet2");
 // });
+
+// const closeBasket = document.getElementById("closeBasket");
+// const bascetCloser = document.getElementById("bascetCloser");
+// closeBasket.addEventListener("click",function(
+
+// ){
+
+// })
+
+//! ასინქრონული
+
+const teamMembers = document.getElementById("teamMembers");
+const teamMenbersNames = document.getElementById("teamMenbersNames");
+const MembersNameUl2 = document.getElementById("MembersNameUl2");
+async function TeamMembersFnc() {
+  try {
+    const respons = await axios.get("http://localhost:3000/posts");
+    respons.data.forEach((element) => {
+      AboutMembersFnc(element);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}
+TeamMembersFnc();
+
+function AboutMembersFnc(item) {
+  const MainBox = document.createElement("div");
+  MainBox.setAttribute("item-id", item.id);
+  MainBox.classList.add("MainBox");
+  //
+  let li = document.createElement("li");
+  li.innerText = `${item.first_name} ${item.last_name}`;
+  li.classList.add("MembersName");
+  //
+  let ul = document.createElement("ul");
+  ul.classList.add("MembersNameUl");
+  ul.appendChild(li);
+  console.log(ul);
+  ul.addEventListener("click", function (item) {
+    MainBox.getAttribute("item-id");
+    MainBox.classList.toggle("MainBox2");
+    console.log(MainBox);
+  });
+  //
+  let img = document.createElement("img");
+  img.classList.add("TeamMembersImage");
+  img.setAttribute("src", item.avatar);
+  //
+  teamMenbersNames.appendChild(ul);
+  MainBox.appendChild(img);
+  teamMembers.appendChild(MainBox);
+}

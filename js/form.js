@@ -92,3 +92,14 @@
 // }
 
 // click();
+
+// async function testFNc() {
+//   try {
+//     const respons = await axios.get("https://reqres.in/api/users?page=");
+//     console.log(respons);
+//   } catch (error) {
+//     console.error("error");
+//   }
+// }
+// testFNc();
+

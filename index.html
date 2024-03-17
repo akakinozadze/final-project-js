@@ -199,7 +199,21 @@
 
           <div class="buttonBox" id="loginRegistr">Login In</div>
           <div class="Sing-Up" id="SingUp">Sing Up</div>
+
+          <div class="bascet" id="bascet1">
+            <svg
+              class="bascet"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"
+              />
+            </svg>
+          </div>
         </div>
+        <div class="bascet21" id="bascet21"></div>
         <form action="" class="buttonlogin" id="loginBox">
           <input
             type="email"
@@ -329,6 +343,7 @@
             <!-- ვმოქმედებ უშუალოდ li ტეგებზე , ზომა და აშშ.. -->
             <li class="splide__slide firsSlider kaki6">
               <img
+                class="splideBox"
                 id="testi1"
                 src="./shoes/GRAND.COURT.SHOES/Grand_Court_Shoes_White_GW9214_01_standard.avif"
                 alt="shoes"
@@ -338,6 +353,7 @@
             </li>
             <li class="splide__slide firsSlider kaki6">
               <img
+                class="splideBox"
                 id="testi2"
                 src="./shoes/SUPERSTAR.XLG.SHOES/Superstar_XLG_Shoes_Burgundy_IE7377_01_standard.avif"
                 alt="image.SUPERSTAR.XLG.SHOES"
@@ -347,6 +363,7 @@
             </li>
             <li class="splide__slide firsSlider kaki6">
               <img
+                class="splideBox"
                 id="testi3"
                 src="./shoes/Sambae.x.KSENIA/Sambae_x_KSENIASCHNAIDER_Shoes_Beige_ID0444_01_standard.avif"
                 alt="image.SAMBAE.X.KSENIA"
@@ -356,6 +373,7 @@
             </li>
             <li class="splide__slide firsSlider kaki6">
               <img
+                class="splideBox"
                 id="testi4"
                 src="./shoes/Handball.Spezial/Handball_Spezial_Shoes_Grey_IE9840_01_standard.avif"
                 alt="image.Handball.Spezial"
@@ -365,6 +383,7 @@
             </li>
             <li class="splide__slide firsSlider kaki6">
               <img
+                class="splideBox"
                 id="testi5"
                 src="./shoes/SAMBA.OG.SHOES/Samba_OG_Shoes_Green_IE3440_01_standard.avif"
                 alt="image.SAMBA.OG.SHOES"
@@ -374,6 +393,7 @@
             </li>
             <li class="splide__slide firsSlider kaki6">
               <img
+                class="splideBox"
                 id="testi6"
                 src="./shoes/SAMBA.DECON.SHOES/Samba_Decon_Shoes_White_IF0642_01_standard.avif"
                 alt="image.SAMBA.DECON.SHOES"
@@ -823,10 +843,19 @@
           </div>
         </div>
       </section>
+      <section class="asyncFnc">
+        <!-- ასინქრონული  -->
+        <div class="flex">
+          <div class="teamMenbersNames" id="teamMenbersNames">
+           
+          </div>
+          <div id="teamMembers" class="teamMembersMainBox"></div>
+        </div>
+      </section>
     </main>
-
-    <script src="js/script.js" type="module"></script>
-    <script src="js/form.js" type="module"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <!-- <script src="js/form.js" type="module"></script> -->
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
