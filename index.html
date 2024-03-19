@@ -275,6 +275,7 @@
               id="Youremail"
               placeholder="Email address"
             />
+            <p id="emailError"></p>
           </div>
           <div class="lableBox box2">
             <label class="singUpValue" for="">password</label>
@@ -284,9 +285,8 @@
               name="passwordRegistr"
               id="passwordRegistr"
               placeholder="password"
-              minlength="6"
-              pattern="/.*[0-9].*/"
             />
+            <p class="error-text" id="error-passw"></p>
           </div>
           <div class="lableBox box3">
             <label class="singUpValue" for="">Repeat password</label>
@@ -296,29 +296,19 @@
               name="RepeatPassword"
               id="RepeatPassword"
               placeholder="Repeat password"
-              minlength="6"
-              pattern="/.*[0-9].*/"
             />
+            <p class="error-text" id="error-passw2"></p>
           </div>
           <div class="lableBox box2">
             <label for="">Enter your birth day</label>
             <input type="date" id="date-between" name="date" />
           </div>
           <div class="boxRadio">
-            <input
-              class="inputRadio"
-              type="radio"
-              name="genderWoman"
-              id="radio1"
-            />
+            <input class="inputRadio" type="radio" name="gender" />
             <label for="">woman</label>
-            <input
-              class="inputRadio"
-              type="radio"
-              name="genderWoman"
-              id="radio2"
-            />
+            <input class="inputRadio" type="radio" name="gender" />
             <label for="">man</label>
+            <p class="error-text" id="error-gender"></p>
           </div>
 
           <div class="submitBox">
@@ -846,14 +836,15 @@
       <section class="asyncFnc">
         <!-- ასინქრონული  -->
         <div class="flex">
-          <div class="teamMenbersNames" id="teamMenbersNames">
-           
+          <div class="teamMenbersNames" id="teamMenbersNames"></div>
+          <div id="teamMembers" class="teamMembersMainBox">
+            <ul id="ulNew" class="ulNew"></ul>
           </div>
-          <div id="teamMembers" class="teamMembersMainBox"></div>
         </div>
       </section>
     </main>
     <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/form.js"></script>
     <script type="module" src="js/script.js"></script>
     <!-- <script src="js/form.js" type="module"></script> -->
     <script src="

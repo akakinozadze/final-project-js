@@ -9,6 +9,9 @@
   top: 0;
   z-index: 99;
 }
+.bady {
+  height: 100000px;
+}
 .menu {
   max-width: 40px;
   height: 16px;
@@ -602,62 +605,55 @@ h3 {
 .flex {
   display: flex;
   flex-direction: column;
-  /* max-width: 1350px; */
-  /* justify-content: center;
-  align-items: center; */
-  column-gap: 20px;
   width: 100%;
 }
-
 .teamMembersMainBox {
   display: flex;
   justify-content: center;
   column-gap: 20px;
-  /* height: 40px; */
-  /* text-align: center; */
-  background-color: #12129c;
-  height: 240px;
-  /* overflow: ; */
   width: 100%;
-  /* background-color: #ff9966; */
 }
-
 .teamMenbersNames {
   display: flex;
-  background-color: #326b27;
   width: 100%;
   column-gap: 20px;
   text-align: center;
 }
-
 .MainBox {
-  height: 0;
-  overflow: hidden;
   width: 100%;
-  background-color: #4a3b34;
   text-align: center;
-  transition: all 0.5s;
-}
-.MainBox.MainBox2 {
-  height: 240px;
   transition: all 0.5s;
 }
 .MembersNameUl {
   width: 100%;
-  height: 30px;
-  background-color: red;
+  cursor: pointer;
+  box-shadow: 15px 15px 20px rgb(255, 255, 0);
 }
 .TeamMembersImage {
-  max-width: 230px;
+  max-width: 220px;
   height: 110px;
   object-fit: cover;
   width: 100%;
-  margin-top: 1rem;
-  background-color: aqua;
+  margin-top: 0.3rem;
 }
 .MembersName {
-  color: black;
+  color: rgb(84, 59, 59);
   font-family: "Mulish";
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.pharagarapHistori {
+  font-family: "Mulish";
+  font-weight: 500;
+  font-size: 1rem;
+  color: #060605;
+  margin-top: 0.25rem;
+}
+
+/* ვალიდაციის ტექსტი */
+.error-text {
+  color: red;
+  font-size: 1rem;
 }

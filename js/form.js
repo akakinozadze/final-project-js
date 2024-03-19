@@ -1,105 +1,82 @@
 "use strict";
+const formRegistrBox = document.getElementById("formRegistrBox");
+const submitRegistre = document.getElementById("submitRegistre");
+formRegistrBox.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const errors = {};
+  //იუზერის სახელი
+  let FirstName = document.getElementById("FirstName").value;
+  if (FirstName.value == "") {
+    errors.FirstName = "can not be empty";
+  }
+  // იუზერის გვარი
+  let LastName = document.getElementById("LastName").value;
+  if (LastName.value == "") {
+    errors.LastName = "can not be empty";
+  }
+  // პაროლი
+  let passwordRegistr = document.getElementById("passwordRegistr").value;
+  let RepeatPassword = document.getElementById("RepeatPassword").value;
+  if (passwordRegistr == "") {
+    errors.passw = "can not empty";
+  }
 
-// export function formFmc() {
-//   const formRegistrBox = document.getElementById("formRegistrBox");
-//   const FirstName = document.getElementById("FirstName");
-//   const LastName = document.getElementById("LastName");
-//   const Youremail = document.getElementById("Youremail");
-//   const passwordRegistr = document.getElementById("passwordRegistr");
-//   const RepeatPassword = document.getElementById("RepeatPassword");
-//   const radio1 = document.getElementById("radio1");
-//   const radio2 = document.getElementById("radio2");
-//   const submitRegistre = document.getElementById("submitRegistre");
-//   formRegistrBox.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     const errors = {};
-//     //იუზერის სახელი
-//     if (FirstName.value == "" || FirstName.value == null) {
-//       errors.FirstName = "First name can not be empty";
-//     }
-//     // იუზერის გვარი
+  if (passwordRegistr != RepeatPassword) {
+    errors.passw2 = "Passwords do not match";
+  }
+  // რადიო
+  let gender = false;
 
-//   });
-// }
-// formFmc();
+  formRegistrBox
+    .querySelectorAll('[genderWoman = "genderMan"]')
+    .forEach((item) => {
+      if (item.checked) {
+        gender = true;
+      }
+    });
 
-// const emailHeader = document.getElementById("emailHeader");
-// const passwordHeader = document.getElementById("passwordHeader");
+  if (!gender) {
+    errors.gender = "Please select Your Gender";
+  }
+  // შეცდომები
+  for (let item in errors) {
+    console.log(item); //key: check, gender,passw,username
 
-// export function loginIn() {}
-//  if ()
-// loginIn();
+    let errorelement = document.getElementById("error-" + item);
+    console.log(errorelement);
 
-// სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 1
+    if (errorelement) {
+      errorelement.textContent = errors[item];
+    }
+  }
 
-//
+  if (Object.keys(errors).length == 0) {
+    formRegistrBox.submit();
+  }
 
-//  ქლიქი
+  console.log(errors);
+});
 
-// const clickBack3 = document.getElementById("clickBack3");
-// clickBack3.addEventListener("click", function () {
-//   box7.classList.remove("box7");
-// });
+// email
 
-// სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 2
+let Youremail = document.getElementById("Youremail");
 
-// სლაიდერიდ დივიდან დეტალურ აღწერაში გადასასვლელი ღილაკი 3
+function validationEmail() {
+  let Youremail = document.getElementById("Youremail").value;
+  let textError = document.getElementById("emailError");
+  let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-// ! მეოთხე ყუთის ფუნქცია
+  if (emailPattern.test(Youremail)) {
+    textError.innerText = "Your Email is valid";
+    textError.style.color = "green";
+  } else {
+    textError.innerText = "Your Email is Invalid";
+    textError.style.color = "red";
+  }
 
-// const kaki3 = document.getElementById("kaki2");
-// const box5 = document.getElementById("box5");
-// kaki3.addEventListener("click", function () {
-//   box5.classList.add("kaki2");
-// });
+  if (Youremail == "") {
+    textError.innerHTML = "";
+  }
+}
 
-// function click() {
-//   let testi1 = document.getElementById("testi1");
-//   let box5 = document.getElementById("box5");
-//   testi1.addEventListener("click", function () {
-//     box5.classList.toggle("box5");
-//   });
-//   //
-//   let testi2 = document.getElementById("testi2");
-//   let box6 = document.getElementById("box6");
-//   testi2.addEventListener("click", function () {
-//     box6.classList.toggle("box6");
-//   });
-//   //
-//   let testi4 = document.getElementById("testi4");
-//   let box8 = document.getElementById("box8");
-//   testi4.addEventListener("click", function () {
-//     box8.classList.toggle("box8");
-//   });
-//   //
-//   let testi3 = document.getElementById("testi3");
-//   let box7 = document.getElementById("box7");
-//   testi3.addEventListener("click", function () {
-//     box7.classList.toggle("box7");
-//   });
-//   const clickBack = document.getElementById("clickBack");
-//   clickBack.addEventListener("click", function () {
-//     box5.classList.remove("box5");
-//   });
-//   const clickBack1 = document.getElementById("clickBack1");
-//   clickBack1.addEventListener("click", function () {
-//     box6.classList.remove("box6");
-//   });
-//   const clickBack2 = document.getElementById("clickBack2");
-//   clickBack2.addEventListener("click", function () {
-//     box7.classList.remove("box7");
-//   });
-// }
-
-// click();
-
-// async function testFNc() {
-//   try {
-//     const respons = await axios.get("https://reqres.in/api/users?page=");
-//     console.log(respons);
-//   } catch (error) {
-//     console.error("error");
-//   }
-// }
-// testFNc();
-
+email.addEventListener("keyup", validationEmail);

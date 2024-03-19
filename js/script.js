@@ -170,22 +170,6 @@ clickBack5.addEventListener("click", function () {
   box10.classList.remove("box10");
 });
 
-// import { bascet1 } from "./slider";
-
-// bascet1();
-// const bascet1 = document.getElementById("bascet1");
-// const bascet21 = document.getElementById("bascet21");
-// bascet1.addEventListener("click", function () {
-//   bascet21.classList.add("newBascet2");
-// });
-
-// const closeBasket = document.getElementById("closeBasket");
-// const bascetCloser = document.getElementById("bascetCloser");
-// closeBasket.addEventListener("click",function(
-
-// ){
-
-// })
 
 //! ასინქრონული
 
@@ -194,8 +178,10 @@ const teamMenbersNames = document.getElementById("teamMenbersNames");
 const MembersNameUl2 = document.getElementById("MembersNameUl2");
 async function TeamMembersFnc() {
   try {
-    const respons = await axios.get("http://localhost:3000/posts");
-    respons.data.forEach((element) => {
+    const respons = await axios.get(
+      "https://akakinozadze.github.io/server/server.json"
+    );
+    respons.data.posts.forEach((element) => {
       AboutMembersFnc(element);
     });
   } catch (error) {
@@ -215,19 +201,21 @@ function AboutMembersFnc(item) {
   //
   let ul = document.createElement("ul");
   ul.classList.add("MembersNameUl");
-  ul.appendChild(li);
-  console.log(ul);
-  ul.addEventListener("click", function (item) {
-    MainBox.getAttribute("item-id");
-    MainBox.classList.toggle("MainBox2");
-    console.log(MainBox);
-  });
+
   //
   let img = document.createElement("img");
   img.classList.add("TeamMembersImage");
   img.setAttribute("src", item.avatar);
   //
-  teamMenbersNames.appendChild(ul);
+  let pharagarapHistori = document.createElement("p");
+  pharagarapHistori.getAttribute("item-id");
+  pharagarapHistori.innerText = `${item.about}`;
+  pharagarapHistori.classList.add("pharagarapHistori");
+  //
+
+  ul.appendChild(li);
+  li.appendChild(MainBox);
   MainBox.appendChild(img);
-  teamMembers.appendChild(MainBox);
+  MainBox.appendChild(pharagarapHistori);
+  teamMembers.appendChild(ul);
 }

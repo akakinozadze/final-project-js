@@ -24,7 +24,22 @@
     justify-content: center;
     margin-top: 240px;
   }
-  
+  .MembersName {
+    font-size: 1rem;
+  }
+  .teamMembersMainBox {
+    row-gap: 20px;
+  }
+  .MainBox.MainBox2 {
+    transition: all 0.5s;
+  }
+  .MembersName {
+    font-size: 1rem;
+
+  }
+  .pharagarapHistori {
+    min-height: 100px;
+  }
 }
 @media (min-width: 350px) and (max-width: 750px) {
   .menu {
@@ -57,5 +72,22 @@
     margin: auto;
     /* background-color: cadetblue; */
   }
-  
+  .MembersName {
+    font-size: 1.2rem;
+  }
+  .flex {
+    flex-direction: column;
+    display: flex;
+  }
+  .teamMembersMainBox {
+    flex-direction: column;
+  }
+  .teamMenbersNames {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .MembersNameUl {
+    margin-bottom: 15px;
+  }
+
 }
