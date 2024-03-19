@@ -170,7 +170,6 @@ clickBack5.addEventListener("click", function () {
   box10.classList.remove("box10");
 });
 
-
 //! ასინქრონული
 
 const teamMembers = document.getElementById("teamMembers");
@@ -219,3 +218,10 @@ function AboutMembersFnc(item) {
   MainBox.appendChild(pharagarapHistori);
   teamMembers.appendChild(ul);
 }
+// login in
+const submitHeader2 = document.getElementById("submitHeader");
+
+submitHeader2.addEventListener("click", function () {
+  loginBox.classList.remove("newlogin");
+});
+

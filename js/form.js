@@ -38,6 +38,7 @@ formRegistrBox.addEventListener("submit", (e) => {
   if (!gender) {
     errors.gender = "Please select Your Gender";
   }
+
   // შეცდომები
   for (let item in errors) {
     console.log(item); //key: check, gender,passw,username
@@ -79,4 +80,5 @@ function validationEmail() {
   }
 }
 
-email.addEventListener("keyup", validationEmail);
+Youremail.addEventListener("keyup", validationEmail);
+

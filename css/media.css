@@ -30,15 +30,19 @@
   .teamMembersMainBox {
     row-gap: 20px;
   }
-  .MainBox.MainBox2 {
-    transition: all 0.5s;
-  }
+
   .MembersName {
     font-size: 1rem;
-
   }
   .pharagarapHistori {
     min-height: 100px;
+  }
+  .WOMEN-S-TOPS {
+    max-width: 200px;
+    height: 220px;
+  }
+  .womenT {
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 350px) and (max-width: 750px) {
@@ -76,18 +80,27 @@
     font-size: 1.2rem;
   }
   .flex {
-    flex-direction: column;
-    display: flex;
+    /* flex-direction: column;
+    display: flex; */
+    width: 95%;
+    margin: auto;
   }
   .teamMembersMainBox {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .teamMenbersNames {
-    flex-direction: column;
     row-gap: 5px;
   }
   .MembersNameUl {
     margin-bottom: 15px;
+    max-width: 190px;
   }
-
+  .womanMainBox {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+  }
+  .WOMEN-S-TOPS {
+    height: 260px;
+  }
 }

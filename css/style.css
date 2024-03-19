@@ -657,3 +657,39 @@ h3 {
   color: red;
   font-size: 1rem;
 }
+/* woman */
+.womanMainBox {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  column-gap: 15px;
+  text-align: center;
+}
+.WOMEN-S-TOPS {
+  max-width: 250px;
+  height: 260px;
+  width: 100%;
+  transition: all 0.3s;
+}
+.WOMEN-S-TOPS:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px;
+}
+.T-shirtsImg {
+  object-fit: cover;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+.womenT {
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: "Mulish";
+  margin-top: 0.2rem;
+}
+.womanTP {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Outfit";
+  margin-top: 0.2rem;
+  color: rgb(14, 14, 14);
+}
