@@ -175,6 +175,8 @@ clickBack5.addEventListener("click", function () {
 const teamMembers = document.getElementById("teamMembers");
 const teamMenbersNames = document.getElementById("teamMenbersNames");
 const MembersNameUl2 = document.getElementById("MembersNameUl2");
+//
+
 async function TeamMembersFnc() {
   try {
     const respons = await axios.get(
@@ -188,7 +190,6 @@ async function TeamMembersFnc() {
   }
 }
 TeamMembersFnc();
-
 function AboutMembersFnc(item) {
   const MainBox = document.createElement("div");
   MainBox.setAttribute("item-id", item.id);
@@ -218,6 +219,8 @@ function AboutMembersFnc(item) {
   MainBox.appendChild(pharagarapHistori);
   teamMembers.appendChild(ul);
 }
+// სერჩი
+
 // login in
 const submitHeader2 = document.getElementById("submitHeader");
 
@@ -225,3 +228,78 @@ submitHeader2.addEventListener("click", function () {
   loginBox.classList.remove("newlogin");
 });
 
+//serch
+const searchBox = document.getElementById("searchBox");
+const inputSearch11 = document.getElementById("inputSearch11");
+searchBox.addEventListener("click", (e) => {
+  e.stopPropagation();
+  inputSearch11.classList.toggle("inputSearch12");
+});
+// let inputSearch2 = document.getElementById("inputSearch1");
+// let result = document.getElementById("result");
+// let itemList = [];
+
+// async function asyncFncfetch() {
+//   const response = await fetch("https://reqres.in/api/users?page=1");
+//   console.log(response);
+//   if (!response.ok) {
+//     throw new Error("can not fetch data");
+//   }
+//   const mosuliInfo = await response.json();
+//   return mosuliInfo;
+// }
+
+// asyncFncfetch()
+//   .then((responseData) => {
+//     // console.log(responseData);
+//     responseData.data.forEach((element) => {
+//       let li = document.createElement("li");
+//       li.textContent = `${element.first_name} ${element.last_name}`;
+//       itemList.push(li);
+//       result.appendChild(li);
+//     });
+//   })
+//   .catch((err) => {
+//     console.log("rejected", err);
+//   });
+
+// function filterData(searchItem) {
+//   itemList.forEach((item) => {
+//     console.log(item); //li
+
+//     if (item.innerText.toLowerCase().includes(searchItem.toLowerCase())) {
+//       item.classList.remove("hide");
+//     } else {
+//       item.classList.add("hide");
+//     }
+//   });
+// }
+
+// inputSearch2.addEventListener("keyup", function () {
+//   // console.log(this);
+//   filterData(this.value);
+// });
+
+// ----
+// function getComments(commnetId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (commnetId > 100) {
+//         resolve("Comments Ok Status");
+//       } else {
+//         reject("Comemnt Not Ok Status");
+//       }
+//     }, 2000);
+//   });
+// }
+
+// async function renderPage() {
+//   try {
+//     let comments = await getComments(40);
+//     console.log(comments);
+//   } catch (e) {
+//     console.log("შეცდომის ტექსტი", e);
+//   }
+// }
+
+// renderPage();

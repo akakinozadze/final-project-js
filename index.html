@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
     <link
       href="
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
@@ -154,7 +153,6 @@
               </div>
             </div>
           </div>
-
           <div class="close" id="close2">
             <svg
               class="close2"
@@ -177,26 +175,7 @@
           /></a>
         </div>
         <div class="search1">
-          <div class="search2" id="searchIcon">
-            <svg
-              class="search3"
-              id="search3"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-              />
-            </svg>
-          </div>
-          <input
-            type="text"
-            class="inputSearch"
-            id="inputSearch1"
-            placeholder="search"
-          />
-
+          <div class="search2" id="searchIcon"></div>
           <div class="buttonBox" id="loginRegistr">Login In</div>
           <div class="Sing-Up" id="SingUp">Sing Up</div>
 
@@ -242,7 +221,7 @@
         <!-- ფორმის ვალიდაცია -->
         <form action="" class="formRegistrBox" id="formRegistrBox" method="GET">
           <div class="lableBox box1">
-            <label class="singUpValue" for="">First name</label>
+            <label class="singUpValue">First name</label>
             <input
               class="singUpValue"
               type="text"
@@ -253,7 +232,7 @@
             />
           </div>
           <div class="lableBox box1">
-            <label class="singUpValue" for="">Last name</label>
+            <label class="singUpValue">Last name</label>
             <input
               class="singUpValue"
               type="text"
@@ -264,7 +243,7 @@
             />
           </div>
           <div class="lableBox box1">
-            <label class="singUpValue" for="">Your email</label>
+            <label class="singUpValue">Your email</label>
             <input
               class="singUpValue"
               type="email"
@@ -275,7 +254,7 @@
             <p id="emailError"></p>
           </div>
           <div class="lableBox box2">
-            <label class="singUpValue" for="">password</label>
+            <label class="singUpValue">password</label>
             <input
               class="singUpValue"
               type="password"
@@ -286,7 +265,7 @@
             <p class="error-text" id="error-passw"></p>
           </div>
           <div class="lableBox box3">
-            <label class="singUpValue" for="">Repeat password</label>
+            <label class="singUpValue">Repeat password</label>
             <input
               class="singUpValue"
               type="password"
@@ -890,7 +869,7 @@
         </div>
       </section>
       <!-- kids -->
-      <section>
+      <section class="kids">
         <div class="womanMainBox">
           <div class="WOMEN-S-TOPS">
             <h6 class="womenT">TRACK PANTS</h6>
@@ -957,6 +936,70 @@
           </div>
         </div>
       </section>
+      <footer>
+        <div class="footer">
+          <div class="searchBox1">
+            <!-- <h2>User filter</h2> -->
+            <div class="inputFooterSearch">
+              <input
+                type="text"
+                class="inputSearch1"
+                id="inputSearch11"
+                placeholder="search"
+              />
+              <ul class="ululuil" id="result"></ul>
+            </div>
+            <div id="searchBox" class="filtre">
+              <h2>User filter</h2>
+              <svg
+                class="search3"
+                id="search3"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="socMedia">
+            <div class="socmediaIconBox">
+              <a href="https://www.facebook.com/ " target="_blank">
+                <img
+                  class="socMediaIcon"
+                  src="./img/socmedia/facebook.svg"
+                  alt="img.facebook"
+              /></a>
+            </div>
+            <div class="socmediaIconBox">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="socMediaIcon"
+                  src="./img/socmedia/square-instagram.svg"
+                  alt="img.instagram"
+              /></a>
+            </div>
+            <div class="socmediaIconBox" target="_blank">
+              <a href="https://twitter.com/">
+                <img
+                  class="socMediaIcon"
+                  src="./img/socmedia/square-x-twitter.svg"
+                  alt="img.twitter"
+              /></a>
+            </div>
+            <div class="socmediaIconBox" target="_blank">
+              <a href="https://www.youtube.com/"
+                ><img
+                  class="socMediaIcon"
+                  src="./img/socmedia/square-youtube.svg"
+                  alt="img.youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./node_modules/axios/dist/axios.min.js"></script>
     <script src="js/form.js"></script>

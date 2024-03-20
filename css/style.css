@@ -8,10 +8,11 @@
   left: 0;
   top: 0;
   z-index: 99;
+  background-color: #ff9966;
 }
-.bady {
+/* .bady {
   height: 100000px;
-}
+} */
 .menu {
   max-width: 40px;
   height: 16px;
@@ -168,6 +169,7 @@ h3 {
   top: 0;
   transition: all;
   transition-duration: 1s;
+  position: fixed;
 }
 .ul {
   padding-top: 5px;
@@ -325,7 +327,6 @@ h3 {
   top: 110px;
   right: 100px;
   z-index: 12313123;
-  background-color: crimson;
 }
 .bascetCloser1 {
   max-width: 120px;
@@ -414,7 +415,6 @@ h3 {
   object-fit: cover;
 }
 .firsSlider.kaki6:hover {
-  /* background-color: rgb(112, 112, 152); */
   border: 2px solid black;
 }
 .h2bostasi {
@@ -600,7 +600,7 @@ h3 {
 }
 /* test */
 .asyncFnc {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .flex {
   display: flex;
@@ -664,6 +664,8 @@ h3 {
   display: flex;
   column-gap: 15px;
   text-align: center;
+  justify-content: center;
+  justify-content: space-between;
 }
 .WOMEN-S-TOPS {
   max-width: 250px;
@@ -671,7 +673,7 @@ h3 {
   width: 100%;
   transition: all 0.3s;
 }
-.WOMEN-S-TOPS:hover{
+.WOMEN-S-TOPS:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 10px;
 }
@@ -692,4 +694,161 @@ h3 {
   font-family: "Outfit";
   margin-top: 0.2rem;
   color: rgb(14, 14, 14);
+}
+.kids {
+  margin-top: 115px;
+}
+/*footer */
+.footer {
+  width: 100%;
+  background-color: #f3f0ee;
+  display: flex;
+  /* margin: auto; */
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBox1 {
+  display: flex;
+  justify-content: end;
+  max-width: 380px;
+  width: 100%;
+}
+.inputSearch1 {
+  display: none;
+}
+.inputSearch1.inputSearch12 {
+  display: block;
+}
+.filtre {
+  display: flex;
+  column-gap: 10px;
+}
+.inputSearch1 {
+  width: 100%;
+}
+.inputFooterSearch {
+  max-width: 250px;
+  width: 100%;
+}
+.socmediaIconBox {
+  width: 100%;
+  border-radius: 90px;
+  width: 20px;
+  height: 20px;
+  box-shadow: 5px 5px 20px rgb(0, 255, 64);
+  display: grid;
+  place-items: center;
+}
+.socMediaIcon {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 90px;
+}
+.socMedia {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* media */
+@media (max-width: 1024px) {
+  .newSearch2.inputSearch {
+    max-width: 100px;
+    width: 100%;
+  }
+  .SizeGRAND-COURT-SHOES {
+    margin-top: 25px;
+    max-width: 710px;
+    width: 100%;
+    height: 720px;
+  }
+  .GRAND_COURT_SHOES {
+    max-width: 350px;
+    height: 350px;
+  }
+  .mainSizeBox {
+    max-width: 250px;
+    height: 320px;
+    margin-top: 25px;
+    justify-content: center;
+    margin-top: 240px;
+  }
+  .MembersName {
+    font-size: 1rem;
+  }
+  .teamMembersMainBox {
+    row-gap: 20px;
+  }
+
+  .MembersName {
+    font-size: 1rem;
+  }
+  .pharagarapHistori {
+    min-height: 100px;
+  }
+  .WOMEN-S-TOPS {
+    max-width: 200px;
+    height: 220px;
+  }
+  .womenT {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 750px) {
+  .menu {
+    display: block;
+  }
+  .box-garmon {
+    display: none;
+  }
+  .newSearch2.inputSearch {
+    margin-top: 30px;
+    right: 0;
+    max-width: 212px;
+  }
+  .SizeGRAND-COURT-SHOES {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 360px;
+    height: 875px;
+    margin-top: 25px;
+  }
+  .GRAND_COURT_SHOES {
+    max-width: 250px;
+    height: 210px;
+  }
+  .mainSizeBox {
+    max-width: 150px;
+    margin-top: 50px;
+    height: 150px;
+    margin: auto;
+  }
+  .MembersName {
+    font-size: 1.2rem;
+  }
+  .flex {
+    width: 95%;
+    margin: auto;
+  }
+  .teamMembersMainBox {
+    flex-wrap: wrap;
+  }
+  .teamMenbersNames {
+    row-gap: 5px;
+  }
+  .MembersNameUl {
+    margin-bottom: 15px;
+    max-width: 190px;
+  }
+  .womanMainBox {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+  }
+  .WOMEN-S-TOPS {
+    height: 260px;
+  }
 }
