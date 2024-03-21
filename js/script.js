@@ -81,11 +81,25 @@ const closeLogin = document.getElementById("closeLogin");
 closeLogin.addEventListener("click", function () {
   loginBox.classList.remove("newlogin");
 });
-// submitHeader
-const submitHeader = document.getElementById("submitHeader");
-submitHeader.addEventListener("click", function (e) {
+// submitHeader // cookies
+loginBox.addEventListener("submit", function (e) {
   e.preventDefault();
+  let ChecBox = document.getElementById("ChecBox");
+  if (ChecBox.checked) {
+    let userNameValue = document.getElementById("userName").value;
+    Cookies.set("username", userNameValue);
+  } else {
+    Cookies.remove("username");
+  }
+  e.target.submit();
 });
+
+let sevedCookies = Cookies.get("username");
+if (sevedCookies) {
+  document.getElementById("userName").value = sevedCookies;
+  document.getElementById("ChecBox").checked = true;
+}
+
 // sin up
 const SingUp = document.getElementById("SingUp");
 const formRegistrBox = document.getElementById("formRegistrBox");
@@ -221,14 +235,6 @@ function AboutMembersFnc(item) {
 }
 // სერჩი
 
-// login in
-const submitHeader2 = document.getElementById("submitHeader");
-
-submitHeader2.addEventListener("click", function () {
-  loginBox.classList.remove("newlogin");
-});
-
-//serch
 const searchBox = document.getElementById("searchBox");
 const inputSearch11 = document.getElementById("inputSearch11");
 searchBox.addEventListener("click", (e) => {

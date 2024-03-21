@@ -194,21 +194,27 @@
         </div>
         <div class="bascet21" id="bascet21"></div>
         <form action="" class="buttonlogin" id="loginBox">
-          <input
-            type="email"
-            name="userNameHeader"
-            id="emailHeader"
-            placeholder="Enter your email"
-          />
-          <input
-            type="password"
-            name="passwordHeader"
-            id="passwordHeader"
-            placeholder="Enter password"
-          />
-          <button class="submitCursor" value="submit" id="submitHeader">
+          <div>
+            <input
+              type="text"
+              name="userNameHeader"
+              id="userName"
+              placeholder="User name"
+            />
+            <input type="checkbox" id="ChecBox" />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="passwordHeader"
+              id="passwordHeader"
+              placeholder="Enter password"
+            />
+          </div>
+          <button class="submitCursor" value="submit" id="submitheader">
             submit
           </button>
+      
           <div id="closeLogin" class="closeLogin">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -1002,6 +1008,7 @@
       </footer>
     </main>
     <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./node_modules/js-cookie/dist/js.cookie.min.js"></script>
     <script src="js/form.js"></script>
     <script type="module" src="js/script.js"></script>
     <!-- <script src="js/form.js" type="module"></script> -->
