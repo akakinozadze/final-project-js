@@ -143,20 +143,8 @@ let box10 = document.getElementById("box10");
 testi6.addEventListener("click", function () {
   box10.classList.toggle("box10");
 });
-var splide = new Splide(".splide", {
-  type: "loop",
-  perPage: 3,
-  focus: "center",
-  pagination: false,
-  autoplay: true,
-  inerval: 2000,
-});
-splide.mount();
-
-// !  დავუბრუნდები
-// import { sliderFnc } from "./slider";
-// sliderFnc();
-
+import { sliderFnc } from "./slider.js";
+sliderFnc();
 //!  ქლიქი ფეიჯის გათიშვა
 const clickBack = document.getElementById("clickBack");
 clickBack.addEventListener("click", function () {
@@ -182,14 +170,11 @@ const clickBack5 = document.getElementById("clickBack5");
 clickBack5.addEventListener("click", function () {
   box10.classList.remove("box10");
 });
-
 //! ასინქრონული
-
 const teamMembers = document.getElementById("teamMembers");
 const teamMenbersNames = document.getElementById("teamMenbersNames");
 const MembersNameUl2 = document.getElementById("MembersNameUl2");
-//
-
+//..
 async function TeamMembersFnc() {
   try {
     const respons = await axios.get(
@@ -214,7 +199,6 @@ function AboutMembersFnc(item) {
   //
   let ul = document.createElement("ul");
   ul.classList.add("MembersNameUl");
-
   //
   let img = document.createElement("img");
   img.classList.add("TeamMembersImage");
@@ -225,7 +209,6 @@ function AboutMembersFnc(item) {
   pharagarapHistori.innerText = `${item.about}`;
   pharagarapHistori.classList.add("pharagarapHistori");
   //
-
   ul.appendChild(li);
   li.appendChild(MainBox);
   MainBox.appendChild(img);
@@ -233,7 +216,6 @@ function AboutMembersFnc(item) {
   teamMembers.appendChild(ul);
 }
 // სერჩი
-
 const searchBox = document.getElementById("searchBox");
 const inputSearch11 = document.getElementById("inputSearch11");
 searchBox.addEventListener("click", (e) => {
@@ -243,7 +225,6 @@ searchBox.addEventListener("click", (e) => {
 // let inputSearch2 = document.getElementById("inputSearch1");
 // let result = document.getElementById("result");
 // let itemList = [];
-
 // async function asyncFncfetch() {
 //   const response = await fetch("https://reqres.in/api/users?page=1");
 //   console.log(response);
