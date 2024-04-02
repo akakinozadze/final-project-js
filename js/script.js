@@ -11,7 +11,6 @@ const menu1 = document.getElementById("menu1");
 const NavBar = document.getElementById("NavBar");
 menu1.addEventListener("click", function () {
   NavBar.classList.toggle("navBar2");
-  inputSearch1.classList.remove("newSearch2");
 });
 // close
 const close2 = document.getElementById("close2");
